@@ -24,6 +24,7 @@
             min-height: 100vh;
         }
 
+        /* NAV (same as index) */
         .nav {
             background-color: #1e3a8a;
             padding: 15px;
@@ -32,6 +33,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
+            transition: top 0.3s;
         }
 
         .nav a {
@@ -42,31 +44,35 @@
             font-weight: bold;
         }
 
+        /* CONTENT */
         .content {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 120px 20px 60px;
+            text-align: center;
         }
 
+        /* CARD (same style as index hero-card) */
         .about-card {
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(8px);
             padding: 40px;
             border-radius: 15px;
-            max-width: 750px;
+            max-width: 800px;
             width: 100%;
-            text-align: center;
             color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         .about-card h1 {
-            font-size: 40px;
+            font-size: clamp(30px, 5vw, 48px);
+            margin-bottom: 20px;
         }
 
         .about-card p {
-            font-size: 18px;
-            line-height: 1.8;
+            font-size: clamp(16px, 2vw, 18px);
+            line-height: 1.6;
         }
 
         .highlight {
@@ -79,9 +85,15 @@
             color: white;
             text-align: center;
             padding: 30px;
+            margin-top: 50px;
         }
 
+        /* MOBILE (same system as index) */
         @media (max-width: 768px) {
+
+            .nav {
+                padding: 10px;
+            }
 
             .nav a {
                 display: block;
@@ -100,7 +112,7 @@
             }
 
             .about-card h1 {
-                font-size: 30px;
+                font-size: 32px;
             }
 
             .about-card p {
@@ -114,12 +126,14 @@
 
 <div class="overlay">
 
+    <!-- NAV -->
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="about exhilarate.html">About</a>
         <a href="contact exhilarate.html">Contact</a>
     </div>
 
+    <!-- CONTENT -->
     <div class="content">
         <div class="about-card">
 
@@ -142,6 +156,7 @@
 
 </div>
 
+<!-- FOOTER -->
 <footer>
     <h3>Exhilarate Tutoring</h3>
     <p>Helping students succeed in Maths, Science, and more.</p>
