@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Exhilarate Tutoring</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            height: 111vh;
             font-family: Arial, sans-serif;
-            background-image: url("contact us.png");
+            background-image: url("about.jfif");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,104 +24,119 @@
             min-height: 100vh;
         }
 
-        /* Navigation bar */
+        /* NAV (same as index) */
         .nav {
             background-color: #1e3a8a;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: top 0.3s;
         }
 
         .nav a {
             color: white;
             font-size: 20px;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
-        .nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 1000;
-}
 
-        /* Content */
+        /* CONTENT */
         .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px 60px;
             text-align: center;
-            color: white;
-            padding: 100px 20px;
         }
 
-        .content h1 {
-            font-size: 42px;
+        /* CONTACT CARD */
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 100%;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .contact-card h1 {
+            font-size: clamp(30px, 5vw, 48px);
             margin-bottom: 20px;
         }
 
-        .content p {
-            font-size: 20px;
-            max-width: 800px;
-            margin: auto;
+        .contact-card p {
+            font-size: clamp(16px, 2vw, 18px);
             line-height: 1.6;
         }
 
-        /* Contact box */
-        .contact-box {
-            margin-top: 40px;
-            font-size: 22px;
+        .contact-info {
+            margin-top: 20px;
+            font-size: 18px;
         }
 
-        .highlight {
-            color: #22c55e;
-            font-weight: bold;
+        /* BUTTON */
+        .contact-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #22c55e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
         }
-        .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 20px;
-}
 
-.contact-card {
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(8px);
-    padding: 40px;
-    border-radius: 15px;
-    max-width: 700px;
-    text-align: center;
-    color: white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-}
+        .contact-btn:hover {
+            background-color: #16a34a;
+            transform: scale(1.05);
+        }
 
-.contact-card h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
 
-.contact-card p {
-    line-height: 1.8;
-    font-size: 18px;
-}
+        /* MOBILE */
+        @media (max-width: 768px) {
 
-.contact-info {
-    margin: 30px 0;
-}
+            .nav {
+                padding: 10px;
+            }
 
-.contact-btn {
-    display: inline-block;
-    background: #22c55e;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
+            .nav a {
+                display: block;
+                margin: 10px 0;
+                font-size: 18px;
+            }
 
-.contact-btn:hover {
-    background: #16a34a;
-    transform: scale(1.05);
-}
+            .content {
+                padding-top: 160px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .contact-card {
+                padding: 20px;
+            }
+
+            .contact-card h1 {
+                font-size: 32px;
+            }
+
+            .contact-card p {
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 
@@ -125,64 +144,44 @@
 
 <div class="overlay">
 
-    <!-- Navigation -->
+    <!-- NAV -->
     <div class="nav">
         <a href="index.html">Home</a>
         <a href="about exhilarate.html">About</a>
         <a href="contact exhilarate.html">Contact</a>
     </div>
 
+    <!-- CONTACT -->
     <div class="content">
-    <div class="contact-card">
+        <div class="contact-card">
 
-        <h1>Contact Exhilarate Tutoring</h1>
+            <h1>Contact Exhilarate Tutoring</h1>
 
-        <p>
-            Ready to help your child build confidence and achieve academic success.
-            Contact us today to discuss lessons and availability.
-        </p>
+            <p>
+                Ready to help your child build confidence and improve their marks.
+                Contact us today for lessons and availability.
+            </p>
 
-        <div class="contact-info">
-            <p>📞 <strong>Phone / WhatsApp:</strong> 073 809 1914</p>
-            <p>🕒 <strong>Hours:</strong> Monday – Friday, 13:00 – 17:00</p>
+            <div class="contact-info">
+                <p>📞 Phone / WhatsApp: 073 809 1914</p>
+                <p>🕒 Hours: Monday – Friday, 13:00 – 17:00</p>
+            </div>
+
+            <a href="https://wa.me/27738091914" class="contact-btn">
+                Message Us on WhatsApp
+            </a>
+
         </div>
-
-        <a href="https://wa.me/27738091914" class="contact-btn">
-            Message Us on WhatsApp
-        </a>
-
     </div>
+
 </div>
 
- <footer style="
-    background-color: #111827;
-    color: white;
-    text-align: center;
-    padding: 30px;
-    margin-top: 50px;
-">
+<footer>
     <h3>Exhilarate Tutoring</h3>
     <p>Helping students succeed in Maths, Science, and more.</p>
     <p>Contact: 073 809 1914</p>
     <p style="font-size: 12px;">© 2026 All Rights Reserved</p>
 </footer>
-
-<script>
-let lastScroll = 0;
-const nav = document.querySelector(".nav");
-
-window.addEventListener("scroll", () => {
-    let currentScroll = window.pageYOffset;
-
-    if (currentScroll > lastScroll) {
-        nav.style.top = "-100px";
-    } else {
-        nav.style.top = "0";
-    }
-
-    lastScroll = currentScroll;
-});
-</script>
 
 </body>
 </html>
