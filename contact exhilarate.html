@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Exhilarate Tutoring</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 111vh;
+            font-family: Arial, sans-serif;
+            background-image: url("contact us.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        /* Navigation bar */
+        .nav {
+            background-color: #1e3a8a;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 20px;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+}
+
+        /* Content */
+        .content {
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .content h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        /* Contact box */
+        .contact-box {
+            margin-top: 40px;
+            font-size: 22px;
+        }
+
+        .highlight {
+            color: #22c55e;
+            font-weight: bold;
+        }
+        .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.contact-card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(8px);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.contact-card h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.contact-info {
+    margin: 30px 0;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #22c55e;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #16a34a;
+    transform: scale(1.05);
+}
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- Navigation -->
+    <div class="nav">
+        <a href="exhilarate2.html">Home</a>
+        <a href="about exhilarate.html">About</a>
+        <a href="contact exhilarate.html">Contact</a>
+    </div>
+
+    <div class="content">
+    <div class="contact-card">
+
+        <h1>Contact Exhilarate Tutoring</h1>
+
+        <p>
+            Ready to help your child build confidence and achieve academic success.
+            Contact us today to discuss lessons and availability.
+        </p>
+
+        <div class="contact-info">
+            <p>📞 <strong>Phone / WhatsApp:</strong> 073 809 1914</p>
+            <p>🕒 <strong>Hours:</strong> Monday – Friday, 13:00 – 17:00</p>
+        </div>
+
+        <a href="https://wa.me/27738091914" class="contact-btn">
+            Message Us on WhatsApp
+        </a>
+
+    </div>
+</div>
+
+ <footer style="
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+">
+    <h3>Exhilarate Tutoring</h3>
+    <p>Helping students succeed in Maths, Science, and more.</p>
+    <p>Contact: 073 809 1914</p>
+    <p style="font-size: 12px;">© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+let lastScroll = 0;
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        nav.style.top = "-100px";
+    } else {
+        nav.style.top = "0";
+    }
+
+    lastScroll = currentScroll;
+});
+</script>
+
+</body>
+</html>

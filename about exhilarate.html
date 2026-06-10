@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Exhilarate Tutoring</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("about.jfif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            min-height: 100vh;
+        }
+
+        /* NAV */
+        .nav {
+            background-color: #1e3a8a;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+
+        .nav a {
+            color: white;
+            font-size: 20px;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* CENTER CONTENT */
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px;
+        }
+
+        /* GLASS CARD */
+        .about-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(8px);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 750px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .about-card h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-card p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .highlight {
+            color: #22c55e;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+    <!-- NAV -->
+    <div class="nav">
+        <a href="exhilarate2.html">Home</a>
+        <a href="about exhilarate.html">About</a>
+        <a href="contact exhilarate.html">Contact</a>
+    </div>
+
+    <!-- ABOUT CARD -->
+    <div class="content">
+        <div class="about-card">
+
+            <h1>About Exhilarate Tutoring</h1>
+
+            <p>
+                Exhilarate Tutoring is dedicated to helping students succeed by making learning
+                simple, clear, and effective.
+            </p>
+
+            <p>
+                We support learners in <span class="highlight">Mathematics, English, Afrikaans, History, Geography, and Science</span>.
+            </p>
+
+            <p>
+                Our goal is to build confidence, improve understanding, and help students achieve better results in school.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Exhilarate Tutoring</h3>
+    <p>Helping students succeed in Maths, Science, and more.</p>
+    <p>Contact: 073 809 1914</p>
+    <p style="font-size: 12px;">© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+let lastScroll = 0;
+const nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+        nav.style.top = "-100px";
+    } else {
+        nav.style.top = "0";
+    }
+
+    lastScroll = currentScroll;
+});
+</script>
+
+</body>
+</html>
